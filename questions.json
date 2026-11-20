@@ -1,0 +1,32 @@
+[
+    {"question": "IDENTIFYING PROTECTED HEALTH INFORMATION: Which of the following is considered PHI under HIPPA?", "choices": [
+        {"id": "A", "text": "A patient's name and medical diagnosis."},
+        {"id": "B", "text": "De-identified aggregate health data."},
+        {"id": "C", "text": "A physician's public office address."},
+        {"id": "D", "text": "An anonymous patient satisfaction survery."}
+    ]},
+    {"question": "MAINTAINING WORKPLACE SAFETY: What is the correct action to take when stepping away from your work computer station?", "choices": [
+        {"id": "A", "text": "Leave the screen on for quick access."},
+        {"id": "B", "text": "Lock the screen or log off immediately."},
+        {"id": "C", "text": "Turn off the monitor only."},
+        {"id": "D", "text": "Ask a coworker to watch it."}
+    ]},
+    {"question": "UNDERSTANDING DISCLOSURES: Under the Privacy Rule, for which of the following purposes can PHI be disclosed WITHOUT explicit patient authorization?", "choices": [
+        {"id": "A", "text": "Marketing purposes."},
+        {"id": "B", "text": "Selling PHI to a third party."},
+        {"id": "C", "text": "Treatment, Payment, and Health Care Operations (TPO)."},
+        {"id": "D", "text": "Sharing with the patient's employer."}
+    ]},
+    {"question": "RESPONDING TO A DATA BREACH: What is the first step you should take if you suspect a HIPAA data breach has occured?", "choices": [
+        {"id": "A", "text": "Investigate the breach yourself."},
+        {"id": "B", "text": "Wait to see if any harm occurs."},
+        {"id": "C", "text": "Report it immediately to your organization's Privacy/Security Officer."},
+        {"id": "D", "text": "Delete the compromised files."}
+    ]},
+    {"question": "CONSEQUENCES OF NON-COMPLIANCE: Which federal agency is primarily responsible for enforcing the HIPPA Privacy and Security Rules?", "choices": [
+        {"id": "A", "text": "Food and Drug Administration (FDA)."},
+        {"id": "B", "text": "Office for Civil Rights (OCR)."},
+        {"id": "C", "text": "Centers for Disease Control and Prevention (CDC)."},
+        {"id": "D", "text": "Federal Bureau of Investigation (FBI)."}
+    ]}
+]

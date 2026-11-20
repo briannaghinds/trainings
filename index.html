@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HIPAA Training</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><p class="site-title">HIPAA Privacy &amp; Security Training</p></header>
+
+<main>
+<div id="status" class="sr-only" role="status" aria-live="polite"></div>
+
+<!-- 1. Start -->
+<section id="start" class="panel" aria-labelledby="start-h">
+  <h1 id="start-h" tabindex="-1">HIPAA training</h1>
+  <p class="notice">We collect your name and work email to record training completion. Only authorized staff can view this record. Do not enter patient information anywhere.</p>
+  <p class="caption">NOTE: Refreshing or leaving this page mid-presentation or mid-quiz will cause you to start over to this screen.</p>
+  <div class="field">
+    <label for="name">Full name</label>
+    <input id="name" type="text" maxlength="80" autocomplete="name" required>
+  </div>
+  <div class="field">
+    <label for="email">Work email</label>
+    <input id="email" type="email" maxlength="120" autocomplete="email" required aria-describedby="email-hint">
+    <p id="email-hint" class="hint"></p>
+  </div>
+  <div class="check">
+    <input id="attest" type="checkbox" required>
+    <label for="attest">I am the person named above and I completed this training and quiz myself.</label>
+  </div>
+  <button id="begin-btn" type="button" class="btn primary" disabled>Begin training</button>
+</section>
+
+<!-- 2. Slides -->
+<section id="slides" class="panel wide" aria-labelledby="slides-h" hidden>
+  <h1 id="slides-h" tabindex="-1">Training slides</h1>
+  <div class="slide-frame"><img id="slide-img" src="" alt=""></div>
+  <div class="slide-meta">
+    <span id="slide-count"></span>
+    <progress id="progress" value="1" max="1" aria-label="Slide progress"></progress>
+  </div>
+  <div class="row">
+    <button id="back-btn" type="button" class="btn">Back</button>
+    <button id="next-btn" type="button" class="btn primary">Next</button>
+  </div>
+  <div class="timer-box">
+    <p>Time remaining before the quiz: <strong id="countdown" class="mono">3:00</strong></p>
+    <p id="slides-hint" class="hint"></p>
+    <button id="quiz-btn" type="button" class="btn primary" disabled>Take the quiz</button>
+  </div>
+</section>
+
+<!-- 3. Quiz -->
+<section id="quiz" class="panel" aria-labelledby="quiz-h" hidden>
+  <h1 id="quiz-h" tabindex="-1">Quiz</h1>
+  <p class="hint">Answer every question. 100% is required to pass.</p>
+  <div id="quiz-list"></div>
+  <p id="answered-count" class="answered-count"></p>
+  <p id="quiz-feedback" class="feedback" hidden></p>
+  <div class="row">
+    <button id="submit-btn" type="button" class="btn primary" disabled>Submit answers</button>
+    <span id="spinner" class="spinner" hidden aria-hidden="true"></span>
+    <button id="retry-btn" type="button" class="btn" hidden>Retry</button>
+  </div>
+</section>
+
+<!-- 4. Result -->
+<section id="result" class="panel" aria-labelledby="result-h" hidden>
+  <h1 id="result-h" tabindex="-1">Result</h1>
+  <p id="result-msg" class="feedback"></p>
+  <button id="review-btn" type="button" class="btn primary" hidden>Review the slides</button>
+</section>
+</main>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

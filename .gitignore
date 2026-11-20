@@ -1,0 +1,10 @@
+*.pptx
+*answer*
+*key*
+.DS_Store
+.env
+code.gs
+
+# Docs
+GUIDE.md
+README.md
